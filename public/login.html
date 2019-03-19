@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <title>เข้าสู่ระบบ</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/login.js" ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+
+<body class="is-preload">
+
+
+    <div id="wrapper">
+
+        <section class="main">
+            <header>
+
+                <h1>โชคทวีออโต้เซลล์</h1>
+                <h2>เข้าสู่ระบบ</h2>
+            </header>
+
+            <hr />
+
+            <form method="post" action="#">
+                <div class="row">
+                    <div class="main loginPage">
+                        <div class="fields">
+                            <div class="field">
+
+                                <h3>ชื่อผู้ใช้
+                                    <div class="iconInput">
+                                        <input type="text" id="username" placeholder="ชื่อผู้ใช้งาน" />
+                                        <img src="image/icons8-name-50 .png" width=25 />
+                                    </div>
+                                </h3>
+                            </div>
+
+
+                            <div class="field">
+                                <div>
+                                    <h3>รหัสผ่าน
+                                        <div class="iconInput">
+                                            <input type="password" id="password" placeholder="รหัสผ่าน" />
+                                            <img src="image/icons8-password-50.png" width=25 />
+                                        </div>
+                                    </h3>
+                                </div>
+                            </div>
+
+
+
+
+
+                            <a  onclick="login()"  class="button panglogin">เข้าสู่ระบบ</a>
+                            <br>
+
+
+                            <div class="loginBtn">
+                                <hr />
+
+                                <a href="register.html" class="button register">สมัครสมาชิก</a>
+
+                                <br>
+                                หรือ
+                                <br>
+
+
+                                <a href="forget.html" class="forget">ลืมรหัสผ่าน</a>
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+            </form>
+
+
+
+        </section>
+
+
+
+    </div>
+</body>
+
+</html>

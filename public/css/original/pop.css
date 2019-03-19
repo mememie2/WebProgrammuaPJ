@@ -1,0 +1,309 @@
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, a,
+em, img,small, strong, sub, sup, var, center, 
+ol, ul, li,form, label, table, thead, tr, th, td, 
+figure,footer, header, menu, nav, output,
+section, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    
+}
+
+html {
+    height: 100%;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+    
+body {
+		height: 100%;
+		background-color: #ffffff;
+		background-image: url("images/overlay.png"), -moz-linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url("../../images/bg.jpg");
+		background-image: url("images/overlay.png"), -webkit-linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url("../../images/bg.jpg");
+		background-image: url("images/overlay.png"), -ms-linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url("../../images/bg.jpg");
+		background-image: url("images/overlay.png"), linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url("../../images/bg.jpg");
+		background-repeat: repeat,			no-repeat,			no-repeat;
+		background-size: 100px 100px, cover,				cover;
+		background-position: top left,		center center,		bottom center;
+		background-attachment: fixed,			fixed,				fixed;
+}
+body, input, select, textarea {
+    color: #414f57;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    line-height: 2;
+    letter-spacing: 0.2em;
+    
+}
+p {
+    margin: 0 0 1.5em 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #313f47;
+    line-height: 1.5;
+    margin: 0 0 0.75em 0;
+    
+}
+
+    h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+        color: inherit;
+        text-decoration: none;
+    }
+
+h1 {
+    font-size: 1.85em;
+    letter-spacing: 0.22em;
+    margin: 0 0 0.525em 0;
+}
+
+h2 {
+    font-size: 1.25em;
+}
+
+h3 {
+    font-size: 1em;
+    letter-spacing: 0.22em;
+    text-align: left;
+}
+
+h4 {
+    font-size: 1em;
+}
+
+h5 {
+    font-size: 1em;
+}
+
+h6 {
+    font-size: 1em;
+}
+button,.button {
+    transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+		display: inline-block;
+		height: 2.75em;
+		line-height: 2.75em;
+		padding: 0 1.5em;
+		background-color: transparent;
+		border-radius: 4px;
+		border: solid 1px #17ef25;
+		color: #17ef25 !important;
+		cursor: pointer;
+		text-align: center;
+		text-decoration: none;
+		white-space: nowrap;
+}
+.ok{
+    border: solid 1px #17ef25;
+    color: #17ef25 !important;
+}
+.cancle{
+    border: solid 1px #FF0000;
+    color: #FF0000 !important;
+}
+.print{
+    border: solid 1px #FFFF66;
+    color: #FFFF66 !important;
+}
+.next{
+    border: solid 1px #17ef25;
+    color: #17ef25 !important;
+}
+.save{
+    border: solid 1px #17ef25;
+    color: #17ef25 !important;
+}
+.delete{
+    border: solid 1px #FF0000;
+    color: #FF0000 !important;
+}
+.edit{
+    border: solid 1px #FFFF66;
+    color: #FFFF66 !important;
+}
+.upload{
+    border: solid 1px deepskyblue;
+    color: deepskyblue !important;
+}
+.search{
+    border: solid 1px deepskyblue;
+    color: deepskyblue !important;
+}
+.login{
+    border: solid 1px #17ef25;
+    color: #17ef25 !important;
+}
+.register{
+    border: solid 1px #FFC9A0;
+    color: #FFC9A0 !important;
+}
+.logout{
+    border: solid 1px #FF0000;
+    color: #FF0000 !important;
+}
+.add{
+    border: solid 1px deepskyblue;
+    color: deepskyblue !important;
+}
+
+input{
+    -moz-appearance: none;
+     -webkit-appearance: none;
+     -ms-appearance: none;
+     appearance: none;
+     border-radius: 4px;
+     border: solid 1px #c8cccf;
+     color: inherit;
+     display: block;
+     outline: 0;
+     padding: 0 1em;
+     text-decoration: none;
+     width: 100%;
+     height: 2.75em;
+     font-size:1em; 
+    
+}
+
+		input[type="text"]:focus,
+		input[type="password"]:focus,
+		input[type="email"]:focus,
+		input[type="tel"]:focus,
+		select:focus,
+		textare:focus {
+			border-color: #ff7496;
+        }
+        input[type="submit"]:hover,
+		input[type="reset"]:hover,
+		input[type="button"]:hover,
+		button:hover,
+		.button:hover {
+			border-color: #ff7496;
+			color: #ff7496 !important;
+		}
+       
+
+
+#wrapper {
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -moz-align-items: center;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    -moz-justify-content: space-between;
+    -webkit-justify-content: space-between;
+    -ms-justify-content: space-between;
+    justify-content: space-between;
+    -moz-flex-direction: column;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -moz-perspective: 1000px;
+    -webkit-perspective: 1000px;
+    -ms-perspective: 1000px;
+    perspective: 1000px;
+    position: relative;
+    min-height: 100%;
+    padding: 1.5em;
+    z-index: 2;
+}
+
+.main {
+    transition: opacity 1s ease, transform 1s ease;
+	padding: 4.5em 3em 3em 3em ;
+	background: #ffffff;
+	border-radius: 4px;
+	cursor: default;
+	max-width: 100%;
+	opacity: 0.95;
+	position: relative;
+	text-align: center;
+}
+.forget{
+    width: 50%;
+}
+
+#main {
+    -moz-transform-origin: 50% 50%;
+    -webkit-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -moz-transform: rotateX(0deg);
+    -webkit-transform: rotateX(0deg);
+    -ms-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    -moz-transition: opacity 1s ease, -moz-transform 1s ease;
+    -webkit-transition: opacity 1s ease, -webkit-transform 1s ease;
+    -ms-transition: opacity 1s ease, -ms-transform 1s ease;
+    transition: opacity 1s ease, transform 1s ease;
+    padding: 4.5em 3em 3em 3em;
+    background: #ffffff;
+    border-radius: 4px;
+    cursor: default;
+    max-width: 100%;
+    opacity: 0.95;
+    position: relative;
+    text-align: center;
+    width: 70em;
+}
+/*asdasdasdasdasdasdasdasdasdasdasdasd*/
+.fieldsetPop {
+    width: 900px;
+    margin-right: auto;
+    margin-left: auto;
+    }
+
+    .rowPop {
+      display: flex;
+    }
+
+
+    .columnPop {
+    flex: 50%;
+      padding: 10px;
+     height: 80px; /* Should be removed. Only for demonstration */
+    }
+
+    .tPop {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+    
+    .tPop {
+        text-align: center;
+        width: 100%;
+    }
+    .tPop, .thPop, .tdPop {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+
+    .tPop {
+        display: table;
+        border-collapse: separate;
+        border-spacing: 2px;
+        border-color: grey;
+    }
+
+    .h4Pop{
+        letter-spacing: 0.01em;
+    }
+
+    .h5Pop{
+        text-align: right;
+        letter-spacing: 0.01em;
+    }
+
+    .h6Pop {
+        text-align: left;
+        letter-spacing: 0.01em;
+        padding-left: 100px;
+    }
+/* ห้ามเปลี่ยนข้างบนเพิ่มเติมเอาข้างล่าง ใช้ Class นะจ้ะ !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! /*

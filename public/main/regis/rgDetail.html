@@ -1,0 +1,152 @@
+<!DOCTYPE HTML>
+<!--
+	Identity by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>บันทึกรายละเอียดต่อทะเบียน</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="./../../css/style.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+</head>
+
+<body class="is-preload">
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Main -->
+		<section class="bestMain">
+			<header>
+				<h1>บันทึกรายละเอียดต่อทะเบียน</h1>
+
+			</header>
+
+			<form method="post" action="#">
+
+				<!-- ชื่อลูกค้า -->
+				<!-- ใช้ row เพื่อให้อยู่บรรทัดเดียวกัน ใช้ column เพื่อแบ่งเป็น 3 ส่วน -->
+				<div class="bestRow">
+					<div class="bestColumn">
+						<label>ชื่อลูกค้า</label>
+					</div>
+					<div class="bestColumn">
+						<input class="input " type="text" placeholder="กรอกชื่อลูกค้า" />
+					</div>
+					<div class="bestColumn"></div>
+				</div>
+
+				<!-- เลขทะเบียน -->
+				<div class="bestRow">
+					<div class="bestColumn">
+						<label>เลขทะเบียน</label>
+					</div>
+					<div class="bestColumn">
+						<input class="input " type="text" placeholder="กรอกเลขทะเบียน" />
+					</div>
+					<div class="bestColumn"></div>
+				</div>
+
+				<!-- ชื่อรถ/ยี่ห้อ/รุ่น -->
+				<div class="bestRow">
+					<div class="bestColumn">
+						<label>ชื่อรถ/ยี่ห้อ/รุ่น</label>
+					</div>
+					<div class="bestColumn">
+						<input class="input " type="text" placeholder="กรอกชื่อรถ/ยี่ห้อ/รุ่น" />
+					</div>
+					<div class="bestColumn"></div>
+				</div>
+
+				<!-- ราคา -->
+				<div class="bestRow">
+					<div class="bestColumn">
+						<label>ราคา</label>
+					</div>
+					<div class="bestColumn">
+						<input class="input " type="text" placeholder="กรอกราคา" />
+					</div>
+					<div class="bestColumn"></div>
+				</div>
+
+				<!-- ปุ่มเพิ่ม -->
+				<div class="bestRow">
+					<div class="bestColumn"></div>
+					<div class="bestColumn">
+						<a href="#" class="button search">เพิ่ม</a>
+					</div>
+					<div class="bestColumn"></div>
+				</div>
+
+				<!-- ตาราง -->
+				<table class="tableBest">
+					<tr>
+						<!-- ส่วนหัวตาราง -->
+						<th class="thBest">ลำดับที่</th>
+						<th class="thBest">เลขทะเบียน</th>
+						<th class="thBest">ชื่อ/ยี่ห้อ/รุ่น</th>
+						<th class="thBest">ราคา</th>
+						<th class="thBest"></th>
+					</tr>
+					<tr>
+						<!-- ส่วนข้อมูลตาราง -->
+						<td class="tdBest">xxx</td>
+						<td class="tdBest">xxx</td>
+						<td class="tdBest">xxx</td>
+						<td class="tdBest">xxx</td>
+						<td class="tdBest">
+							<!-- centerใหุ้่มอยู่ตรงกลาง -->
+							<center><a href="#" class="button delete">ลบ</a></center> 
+						</td>
+					</tr>
+					<tr>
+						<!-- ส่วนข้อมูลตาราง -->
+						<td class="tdBest">xxx</td>
+						<td class="tdBest">xxx</td>
+						<td class="tdBest">xxx</td>
+						<td class="tdBest">xxx</td>
+						<td class="tdBest">
+							<!-- centerใหุ้่มอยู่ตรงกลาง -->
+							<center><a href="#" class="button delete">ลบ</a></center>
+						</td>
+					</tr>
+				</table>
+
+				<!-- เว้นวรรค เส้นขีด เว้นวรรค -->
+				<br>
+				<hr>
+				<br>
+
+				<!-- ปุ่มถัดไป -->
+				<a href="rgBill.html" class="button" style="position: absolute; right: 8%;">ถัดไป</a>
+				<br>
+
+
+			</form>
+
+
+		</section>
+
+
+
+
+
+	</div>
+
+	<!-- Scripts -->
+	<script>
+		if ('addEventListener' in window) {
+			window.addEventListener('load', function () { document.body.className = document.body.className.replace(/\bis-preload\b/, ''); });
+			document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+		}
+	</script>
+
+</body>
+
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<title>บันทึกรายละเอียดการขาย</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="./../../css/style.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	<script>
+		function deleteRow(r) {
+			var i = r.parentNode.parentNode.rowIndex;
+			document.getElementById("fixed_header").deleteRow(i);
+		}
+		function myCreateFunction() {
+			var table = document.getElementById("fixed_header");
+			var row = table.insertRow(1);
+			var cell1 = row.insertCell(0);
+			var cell2 = row.insertCell(1);
+			var cell3 = row.insertCell(2);
+			var cell4 = row.insertCell(3);
+			var cell5 = row.insertCell(4);
+			var cell6 = row.insertCell(5);
+			cell1.innerHTML = '<td class = "tdPang">x</td>';
+			cell2.innerHTML = '<td class = "tdPang">xxxxx</td>';
+			cell3.innerHTML = '<td class = "tdPang">xxxxxxxx</td>';
+			cell4.innerHTML = '<td class = "tdPang">xxxxxx</td>';
+			cell5.innerHTML = '<td class = "tdPang">xxxxxx</td>';
+			cell6.innerHTML = '<a class="button deleteRow" value="Delete" onclick="deleteRow(this)">ลบ</a>';
+			
+			
+			
+		}	
+	</script>
+</head>
+
+<body class="is-preload">
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Main -->
+		<section class="main">
+			<header>
+
+				<h1>บันทึกรายละเอียดการขาย</h1>
+			</header>
+
+			<hr />
+
+			<form method="post" action="#">
+				<div class="row pangRow">
+					<div class="saveSaleLeft">
+						<div class="fields">
+							<div class="field t1">
+								วันที่<input type="date" name="date" id="date" placeholder="" />
+							</div>
+
+							<div class="field t1">
+								เลขที่เอกสาร<input type="text" name="num" id="num" placeholder="กรอกเลขที่เอกสาร" />
+							</div>
+
+							<div class="field t1">
+								ผู้รับผิดชอบ<input type="text" name="nameEmp" id="nameEmp"
+									placeholder="กรอกชื่อผู้รับผิดชอบ" />
+							</div>
+
+							<div class="field t1">
+								ชื่อลูกค้า<input type="text" name="name" id="name" placeholder="กรอกชื่อลูกค้า" />
+							</div>
+							<br>
+							<hr>
+							<br>
+
+							<div class="field t1">
+								กรอก ID เพื่อค้นหารถ
+								<img src="./../../image/icons8-search-100.png" width="20" />
+
+								<input type="search" name="car" id="car" placeholder="ID รถ" />
+							</div>
+
+							<div class="field t2">
+								<a href="#" onclick="myCreateFunction()" class="button add" >เพิ่ม</a>
+							</div>
+							<br>
+							<hr>
+							<div>
+								<ul class="actions special">
+									<a href="sDeal.html" class="button savesellBT">บันทึก</a>
+								</ul>
+							</div>
+
+						</div>
+
+
+					</div>
+					<div class="saveSaleRight">
+						<div class="field" style="overflow-x:auto!important;">
+							<table class="table tablePang" id="fixed_header">
+
+								<tr>
+									<th>ลำดับที่</th>
+									<th>เลขทะเบียน</th>
+									<th>รุ่น</th>
+									<th>สี</th>
+									<th>ราคา</th>
+									<th>ลบ</th>
+								</tr>
+
+
+								<tr>
+									<td>0001</td>
+									<td>xxxxx</td>
+									<td>xxx</td>
+									<td>xxx</td>
+									<td>xxx</td>
+									<td><a class="button deleteRow" value="Delete" onclick="deleteRow(this)">ลบ</a></td>
+
+								</tr>
+								<tr>
+									<td>0002</td>
+									<td>xxxxx</td>
+									<td>xxx</td>
+									<td>xxx</td>
+									<td>xxx</td>
+									<td><a class="button deleteRow" value="Delete" onclick="deleteRow(this)">ลบ</a></td>
+								</tr>
+								<tr>
+									<td>0003</td>
+									<td>xxxxx</td>
+									<td>xxx</td>
+									<td>xxx</td>
+									<td>xxx</td>
+									<td><a class="button deleteRow" value="Delete" onclick="deleteRow(this)">ลบ</a></td>
+								</tr>
+								<tr>
+									<td>0004</td>
+									<td>xxxxx</td>
+									<td>xxx</td>
+									<td>xxx</td>
+									<td>xxx</td>
+									<td><a class="button deleteRow" value="Delete" onclick="deleteRow(this)">ลบ</a></td>
+								</tr>
+								<tr>
+									<td>0005</td>
+									<td>xxxxx</td>
+									<td>xxx</td>
+									<td>xxx</td>
+									<td>xxx</td>
+									<td><a class="button deleteRow" value="Delete" onclick="deleteRow(this)">ลบ</a></td>
+								</tr>
+								<tr>
+									<td>0006</td>
+									<td>xxxxx</td>
+									<td>xxx</td>
+									<td>xxx</td>
+									<td>xxx</td>
+									<td><a class="button deleteRow" value="Delete" onclick="deleteRow(this)">ลบ</a></td>
+								</tr>
+								<tr>
+
+
+							</table>
+
+						</div>
+					</div>
+
+
+			</form>
+
+
+
+		</section>
+
+
+
+	</div>
+</body>
+
+</html>

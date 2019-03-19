@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+<!--
+	Identity by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+    <title>จัดการพนักงาน</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="./../css/style.css" />
+</head>
+
+<body>
+    <!-- Wrapper -->
+    <div id="wrapper">
+        <!-- Main -->
+        <section class="main home">
+            
+            <form>
+                <h1>จัดการพนักงาน</h1>
+
+                <br>
+
+                <div class="toncolumns is-home">
+
+                    <div class="toncolumn is-4">
+                        <div class="tonimg-resize">
+                            <img src="./../image/user.png">
+                        </div>
+                        <button class="button upload">อัพโหลด</button>
+                        <br>
+                        <div class="isleft">
+                            เบอร์โทรศัพท์
+                            <input type="text" placeholder="กรอกเบอร์โทรศัพท์">
+                        </div>
+                        <div class="isleft">
+                            E-mail
+                            <input type="text" placeholder="Example@gmaail.com">
+                        </div>
+                        <div class="isleft">
+                            เลขบัตรประชาชน
+                            <input type="text" placeholder="กรอกเลขบัตรประชาชน">
+                        </div>
+                        <div class="isleft">
+                            เงินเดือน
+                            <input type="text" placeholder="กรอกเงินเดือน">
+                        </div>
+                        <div>
+                            <br>
+                            <a class="button edit">แก้ไข</a>
+                        </div>
+                    </div>
+                    <div class="toncolumn is-4 is-offset-3">
+                        <div class="isleft">
+                            รหัสพนักงาน
+                            <input type="text" placeholder="กรอกรหัสพนักงาน">
+                        </div>
+                        <div class="isleft">
+                            ตำแหน่ง
+                            <input type="text" placeholder="กรอกตำแหน่ง">
+                        </div>
+                        <div class="isleft">
+                            ชื่อ - นามสกุล
+                            <input type="text" placeholder="กรอก ชื่อ - นามสกุล">
+                        </div>
+
+                        <div class="isleft">
+                            เพศ
+                            <select class="tonselect">
+                                <option value="0">ชาย</option>
+                                <option value="1">หญิง</option>
+                            </select>
+                        </div>
+                        <div class="isleft">
+                            อายุ
+                            <input type="text" placeholder="กรอกอายุ">
+                        </div>
+                        <div class="isleft">
+                            ที่อยู่
+                            <textarea class="tontextarea">
+
+                            </textarea>
+                        </div>
+                        <div>
+                            <br>
+                            <a class="button ok" href="./main.html">บันทึก</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div>
+                    กรอกรหัสพนักงานเพื่อค้นหา
+                </div>
+                <div>
+                    <br>
+                    <input type="text" placeholder="Search.." class="tonsearchTerm">
+                    <button class="tonsearchButton">
+                        ค้นหา
+                    </button>
+                </div>
+
+            </form>
+        </section>
+    </div>
+    <!-- Scripts -->
+    <script>
+        if ('addEventListener' in window) {
+            window.addEventListener('load', function () { document.body.className = document.body.className.replace(/\bis-preload\b/, ''); });
+            document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+        }
+    </script>
+
+</body>
+
+</html>
