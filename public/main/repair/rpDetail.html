@@ -14,6 +14,8 @@
 	<noscript>
 		<link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 
+	<script src="./../../js/serviceRepair.js"></script>
+
 </head>
 
 <body class="is-preload">
@@ -36,7 +38,7 @@
 						<label>ชื่อพนักงาน</label>
 					</div>
 					<div class="bestColumn">
-						<input class="input " type="text" placeholder="กรอกชื่อพนักงาน" />
+						<input id="EmpName" class="input " type="text" placeholder="กรอกชื่อพนักงาน" />
 					</div>
 					<div class="bestColumn"></div>
 				</div>
@@ -47,7 +49,7 @@
 						<label>วันที่</label>
 					</div>
 					<div class="bestColumn">
-						<input type="date" name="date" id="date" placeholder="วันที่" />
+						<input id="date" type="date" name="date" placeholder="วันที่" />
 					</div>
 					<div class="bestColumn"></div>
 				</div>
@@ -58,7 +60,7 @@
 						<label>เลขทะเบียน</label>
 					</div>
 					<div class="bestColumn">
-						<input class="input " type="text" placeholder="กรอกเลขทะเบียน" />
+						<input id="carLicense" class="input " type="text" placeholder="กรอกเลขทะเบียน" />
 					</div>
 					<div class="bestColumn"></div>
 				</div>
@@ -69,7 +71,7 @@
 						<label>รุ่น</label>
 					</div>
 					<div class="bestColumn">
-						<input class="input " type="text" placeholder="กรอกรุ่นรถ" />
+						<input id="carModel" class="input " type="text" placeholder="กรอกรุ่นรถ" />
 					</div>
 					<div class="bestColumn"></div>
 				</div>
@@ -80,7 +82,7 @@
 						<label>สี</label>
 					</div>
 					<div class="bestColumn">
-						<input class="input " type="text" placeholder="กรอกสีรถ" />
+						<input id="carColor" class="input " type="text" placeholder="กรอกสีรถ" />
 					</div>
 					<div class="bestColumn"></div>
 				</div>
@@ -93,24 +95,24 @@
 							<label>อะไหล่</label>
 						</div>
 						<div class="bestColumn">
-							<input type="text" placeholder="กรอกอะไหล่">
+							<input id="nameSpare" type="text" placeholder="กรอกอะไหล่">
 						</div>
 						<div class="bestColumn">
-							<label>จำนวน</label>
+							<label>ราคา</label>
 						</div>
 						<div class="bestColumn">
-							<input type="text" placeholder="กรอกจำนวน">
+							<input id="priceSpare" type="text" placeholder="กรอกราคา">
 						</div>
 						<div class="bestColumn">
-							<a href="#" class="button search">เพิ่ม</a>
+							<a onclick="addToTable()" href="#" class="button search">เพิ่ม</a>
 						</div>
 					</div>
 					<!-- ตาราง -->
-					<table class="tableBest">
+					<table id="listTable" class="tableBest">
 						<tr>
 							<!-- ส่วนหัวตาราง -->
 							<th class="thBest">อะไหล่</th>
-							<th class="thBest">จำนวน</th>
+							<th class="thBest">ราคา</th>
 							<th class="thBest"></th>
 						</tr>
 						<tr>
@@ -119,9 +121,8 @@
 							<td class="tdBest">xxx</td>
 							<td class="tdBest">
 								<!-- centerใหุ้่มอยู่ตรงกลาง -->
-								<center><a href="#" class="button delete">ลบ</a></center>
+								<center><a onclick="deleteToTable(this)" class="button delete">ลบ</a></center>
 							</td>
-
 						</tr>
 						<tr>
 							<!-- ส่วนข้อมูลตาราง -->
@@ -129,9 +130,10 @@
 							<td class="tdBest">xxx</td>
 							<td class="tdBest">
 								<!-- centerใหุ้่มอยู่ตรงกลาง -->
-								<center><a href="#" class="button delete">ลบ</a></center>
+								<center><a onclick="deleteToTable(this)" class="button delete">ลบ</a></center>
 							</td>
 						</tr>
+
 					</table>
 					<br>
 				</fieldset>
