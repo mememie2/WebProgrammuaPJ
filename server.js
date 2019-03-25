@@ -8,6 +8,7 @@ var buy = require('./router/buy')
 var sale = require('./router/sale')
 var repair = require('./router/repair')
 var regis = require('./router/regis_car')
+var emp = require('./router/emp')
 var path = require('path');
 app.use(express.static('public'));
 app.get('/', function (req, res) {
@@ -20,6 +21,7 @@ app.use(buy)
 app.use(sale)
 app.use(repair)
 app.use(regis)
+app.use(emp)
 app.listen(process.env.PORT || 3000, () => {
   console.log('Start server at port 3000.')
 })
