@@ -15,6 +15,15 @@
 		<link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 
 	<script src="./../../js/serviceRepair.js"></script>
+	<style>
+		td {
+			border: 1px solid black;
+			border-collapse: collapse;
+			padding: 5px;
+			text-align: left;
+		}
+	</style>
+
 
 </head>
 
@@ -121,7 +130,7 @@
 							<td class="tdBest">xxx</td>
 							<td class="tdBest">
 								<!-- centerใหุ้่มอยู่ตรงกลาง -->
-								<center><a onclick="deleteToTable(this)" class="button delete">ลบ</a></center>
+								<center><a onclick="deleteToTable()" class="button delete">ลบ</a></center>
 							</td>
 						</tr>
 						<tr>
@@ -130,7 +139,7 @@
 							<td class="tdBest">xxx</td>
 							<td class="tdBest">
 								<!-- centerใหุ้่มอยู่ตรงกลาง -->
-								<center><a onclick="deleteToTable(this)" class="button delete">ลบ</a></center>
+								<center><a onclick="deleteToTable()" class="button delete">ลบ</a></center>
 							</td>
 						</tr>
 
@@ -143,7 +152,7 @@
 				<hr>
 				<br>
 				<!-- ปุ่มถัดไป -->
-				<a href="rpDetailEmp.html" class="button" style="position: absolute; right: 8%;">ถัดไป</a>
+				<a onclick="connectDB()" href="rpDetailEmp.html" class="button" style="position: absolute; right: 8%;">ถัดไป</a>
 				<br>
 
 			</form>
