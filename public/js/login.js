@@ -13,17 +13,17 @@ function login() {
     url: "http://localhost:3000/api/login",
     data: JSON.stringify(data),
     dataType: "json",
-    success: function(customer) {
+    success: function (customer) {
       var result = JSON.stringify(customer);
       console.log(result);
       if (JSON.stringify(customer) == "true") {
         alert("Login Successful!");
-        // window.location = "main.html";
+        window.location = "./../../main/main.html";
       } else {
         alert("Login Incorrect!");
       }
     },
-    error: function(e) {
+    error: function (e) {
       console.log("ERROR: ", e);
     }
   });
