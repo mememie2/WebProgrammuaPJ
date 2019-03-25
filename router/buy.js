@@ -10,7 +10,6 @@ app.post("/api/buy/invoice/getItem", (req, res) => {
     MongoClient.connect(url, function (err, db) {
         if (err) throw err;
         var dbo = db.db("gigabug");
-
         var id = {
             ID_TRN_buy_bill: req.body.id
         }
@@ -57,7 +56,7 @@ app.post("/api/buy/invoice/getItem", (req, res) => {
                                                 res.sendStatus(404)
                                             } else {
                                                 respons.push(result)
-                                              res.send(respons)
+                                                res.send(respons)
 
                                             }
 
