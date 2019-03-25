@@ -39,19 +39,19 @@
                         <br>
                         <div class="isleft">
                             เบอร์โทรศัพท์
-                            <input type="text" placeholder="กรอกเบอร์โทรศัพท์">
+                            <input type="text" id="tell" value="" placeholder="กรอกเบอร์โทรศัพท์">
                         </div>
                         <div class="isleft">
                             E-mail
-                            <input type="text" placeholder="Example@gmaail.com">
+                            <input type="text" id="mail" value="" placeholder="Example@gmaail.com">
                         </div>
                         <div class="isleft">
                             เลขบัตรประชาชน
-                            <input type="text" placeholder="กรอกเลขบัตรประชาชน">
+                            <input type="text" id="id-card" value="" placeholder="กรอกเลขบัตรประชาชน">
                         </div>
                         <div class="isleft">
                             เงินเดือน
-                            <input type="text" placeholder="กรอกเงินเดือน">
+                            <input type="text" id="salary" value="" placeholder="กรอกเงินเดือน">
                         </div>
                         <div>
                             <br>
@@ -61,37 +61,37 @@
                     <div class="toncolumn is-4 is-offset-3">
                         <div class="isleft">
                             รหัสพนักงาน
-                            <input type="text" placeholder="กรอกรหัสพนักงาน">
+                            <input type="text" id="id" value="" placeholder="กรอกรหัสพนักงาน">
                         </div>
                         <div class="isleft">
                             ตำแหน่ง
-                            <input type="text" placeholder="กรอกตำแหน่ง">
+                            <input type="text" id="position" value="" placeholder="กรอกตำแหน่ง">
                         </div>
                         <div class="isleft">
                             ชื่อ - นามสกุล
-                            <input type="text" placeholder="กรอก ชื่อ - นามสกุล">
+                            <input type="text" id="name" value="" placeholder="กรอก ชื่อ - นามสกุล">
                         </div>
 
                         <div class="isleft">
                             เพศ
-                            <select class="tonselect">
-                                <option value="0">ชาย</option>
-                                <option value="1">หญิง</option>
+                            <select id="gender" class="tonselect">
+                                <option value="ชาย">ชาย</option>
+                                <option value="หญิง">หญิง</option>
                             </select>
                         </div>
                         <div class="isleft">
                             อายุ
-                            <input type="text" placeholder="กรอกอายุ">
+                            <input type="text" id="age" value=""  placeholder="กรอกอายุ">
                         </div>
                         <div class="isleft">
                             ที่อยู่
-                            <textarea class="tontextarea">
+                            <textarea id="address" value="" class="tontextarea">
 
                             </textarea>
                         </div>
                         <div>
                             <br>
-                            <a class="button ok" href="./main.html">บันทึก</a>
+                            <a class="button ok" onclick="save()">บันทึก</a>
                         </div>
                     </div>
                 </div>
