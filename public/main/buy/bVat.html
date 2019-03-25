@@ -10,9 +10,10 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="./../../css/style.css" />
+		<script src="../../js/billAndInvoice.js"></script>
 		
 	</head>
-	<body class="is-preload">
+	<body class="is-preload" onload="getTableInvoice()">
 
 		<!-- Wrapper -->
 			<div id="wrapper">
@@ -75,7 +76,7 @@
 												<option value="audi">ซ่อม</option>
 										</select></li>
 										<li>ชื่อลูกค้า</li>
-										<li><input type="date" style=" width: 100%"></li>
+										<li><input type="text" style=" width: 100%"></li>
 										<li>เบอร์โทร</li>
 										<li><input type="date" style=" width: 100%"></li>
 									</ul>   
@@ -95,7 +96,7 @@
 						<br>
 						
 							  	<div class="field">
-										<table class="BVtable" >
+										<table id="BVtable" class="BVtable" >
 												<tr>
 												  <th class="BVth">ลำดับที่</th>
 												  <th class="BVth">เลขทะเบียน</th>
@@ -126,9 +127,9 @@
 							    </br>
 								<div class="field" >
 										<ul style="list-style-type:none;text-align: right">
-												<li>ราคารวมทั้งสิ้น   <a>   30000 </a></li>
-												<li>ภาษีมูลค่าเพิ่ม    <a>  .....0 </a></li>
-												<li>จำนวนเงินรวม    <a>  30000 </a></li>										
+												<li>ราคารวมทั้งสิ้น   <a id="priceAll">   30000 </a></li>
+												<li>ภาษีมูลค่าเพิ่ม    <a id="inv">  .....0 </a></li>
+												<li>จำนวนเงินรวม    <a id= "priceAddinv">  30000 </a></li>										
 										</ul> 
 								
 								</div>

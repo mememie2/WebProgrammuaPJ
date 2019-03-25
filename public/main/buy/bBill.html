@@ -11,10 +11,10 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="./../../css/style.css" />
-	
+	<script src="../../js/billAndInvoice.js"></script>
 </head>
 
-<body>
+<body onload="getTableBill()">
 
 	<!-- Wrapper -->
 	<div id="wrapper">
@@ -30,29 +30,24 @@
 			<br />
 
 			<form method="post" action="#" class="BVform">
-				<div class="BVfields">
+				<div class="BVfields" style="padding:0.5em">
 
 
 					<ul style="list-style-type:none;text-align: left">
-						<li>ได้รับเงินจาก</li>
-						<li>..............................</li>
-						<li>จำนวนเงิน..................</li>
+						<li >ได้รับเงินจาก</li>
+						<li><p id="customer" style="display:inline;"></li>
+						<li>จำนวนเงิน <p id="priceHeader" style="display:inline;"></p></li>
 					</ul>
 					<ul style="list-style-type:none;text-align: left">
 						<li>&nbsp; &nbsp; &nbsp; &nbsp;</li>
 					</ul>
 					<ul style="list-style-type:none;text-align: left">
-						<li>เบี้ยประกัน</li>
-						<li>VAT</li>
-						<li>ราคา</li>
-						<li>รวม</li>
+						<li>เบี้ยประกัน  <p id="invB" style="display:inline;"></p></li>
+						<li>VAT       <p id="invH" style="display:inline;"></p></li>
+						<li>ราคา      <p id="priceH2" style="display:inline;"></p></li>
+						<li>รวม       <p id="total" style="display:inline;"></p></li>
 					</ul>
-					<ul style="list-style-type:none;text-align: left">
-						<li>......................................................</li>
-						<li>......................................................</li>
-						<li>......................................................</li>
-						<li>......................................................</li>
-					</ul>
+					
 				</div>
 				<div class="field">
 
@@ -83,7 +78,7 @@
 
 
 				<div class="field">
-					<table class="BVtable" >
+					<table id="BVtable" class="BVtable" >
 						<tr >
 							<th class="BVth">รหัสรถยนต์</th>
 							<th class="BVth">ชื่อรถยนต์/รุ่น</th>
@@ -120,7 +115,7 @@
 				</br>
 				<div class="field">
 					<ul style="list-style-type:none;text-align: left">
-						<li>วันที่....../...../.....</li>
+						<li>วันที่ <p id ="date" style="display:inline">วันที่....../...../.....</p></li>
 					</ul>
 
 				</div>
@@ -132,7 +127,7 @@
 
 			
 			<a href="#" class="button print" style="position: absolute; right: 9em;" >พิมพ์</a>
-			<a href="bVat.html" class="button" style="position: absolute; right: 2em;">ถัดไป</a>
+			<a href="bVat.html" onclick="insertItemBill()" class="button" style="position: absolute; right: 2em;">ถัดไป</a>
 
 		</section>
 
