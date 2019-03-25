@@ -18,7 +18,6 @@ function addToTable() {
         cell2.innerHTML = '<td >' + v2 + '</td>';
         cell3.innerHTML = '<td ><center><a onclick="deleteToTable()" class="button delete">ลบ</a></center></td>';
         check = check + 1;
-
     } else {
         window.alert("กรุณากรอกข้อมูลให้ถูกต้องและครบถ้วน")
     }
